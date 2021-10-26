@@ -29,6 +29,7 @@ li:hover {
     cursor: pointer;
 }
 
+/* Upgrade bar */
 .upgrade-bar {
     height: 90px;
     width: calc(100% - 230px);
@@ -36,6 +37,24 @@ li:hover {
     position: fixed;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade-btn {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 12px 40px;
+    margin: 0 10px;
+}
+
+.upgrade-btn:hover {
+   transform: scale(1.2);
+    cursor: pointer;
 }
 
 /* MAIN */
