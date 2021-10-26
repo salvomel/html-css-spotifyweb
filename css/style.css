@@ -20,7 +20,22 @@ li {
 }
 
 .actions-icon {
-    font-size: 25px;
+    width: 15%;
+    vertical-align: middle;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.upgrade-bar {
+    height: 90px;
+    width: calc(100% - 230px);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 /* MAIN */
@@ -37,7 +52,7 @@ main {
     float: left;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 5px 20px ;
     line-height: 34px;
     background-color: black;
     color: #a3a3a3;
@@ -72,6 +87,15 @@ main {
     font-size: 15px;
 }
 
+.home {
+    color: white;
+}
+
+.install:hover {
+    color: white;
+    cursor: pointer;
+}
+
 /* Main content */
 .main-content {
     width: calc(100% - 230px);
@@ -96,7 +120,10 @@ main {
 }
 
 .user-icon {
-    font-size: 20px;
+    width: 12%;
+    background-color: grey;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 
