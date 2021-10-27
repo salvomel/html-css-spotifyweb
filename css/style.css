@@ -25,8 +25,20 @@ li {
     vertical-align: middle;
 }
 
+/* Hover Buttons */
 li:hover {
     color: white;
+    cursor: pointer;
+}
+
+/* Hover Albums */
+.img-container:hover .img-album {
+    filter: opacity(0.5);
+    cursor: pointer;
+}
+
+.img-container:hover .img-hover {
+    display: inline-block;
     cursor: pointer;
 }
 
@@ -50,11 +62,11 @@ li:hover {
     border: 1px solid white;
     border-radius: 20px;
     padding: 12px 40px;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 .upgrade-btn:hover {
-   transform: scale(1.2);
+    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -143,6 +155,12 @@ main {
     color: white;
 }
 
+.download-icon {
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+}
+
 .user-icon {
     height: 24px;
     width: 24px;
@@ -150,6 +168,9 @@ main {
     background-color: grey;
     vertical-align: middle;
 }
+
+
+
 
 /* Main content */
 .main-content {
@@ -173,31 +194,52 @@ main {
     font-size: 12px;
 }
 
-
+.evidence::after {
+    display: block;
+	content: '';
+	width: 40%;
+	height: 2px;
+    margin: auto;
+	background-color: lime;
+    margin-top: 3px;
+}
 
 /* Album Section */
 .albums-container {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .albums-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
     align-content: flex-start;
-    
     padding: 20px 0;
-    
 }
 
 .single-album  {
     width: calc((100% / 6) - 15px);
-    margin: 7px;
+    margin-right: 15px;
 }
 
-.single-album img {
+.img-album {
     width: 100%;
+}
+
+.img-container {
+    position: relative;
+  }
+
+.img-hover {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
 }
 
 .albums-container h3 {
