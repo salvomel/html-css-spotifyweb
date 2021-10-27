@@ -330,13 +330,47 @@ footer {
     width: 100%;
     display: flex;
     background-color: #282828;
+    color: white;
 }
 
 .bottom-left,
 .bottom-right {
-
+    width: 25%;
+   
 }
 
 .bottom-center {
-
+    width: 50%;
+    text-align: center;
 }
+
+.player-buttons {
+    font-size: 18px;
+    padding: 7px;
+}
+
+.player-buttons * {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.play {
+    font-size: 35px;
+}
+
+.player-bar {
+    background-color: #5a5a5a;
+    width: 60%;
+    height: 5px;
+    border-radius: 2px;
+    margin: auto;
+    
+}
+
+.player-progress {
+    background-color: white;
+    width: 20%;
+    height: 5px;
+    border-radius: 2px;
+}
+
