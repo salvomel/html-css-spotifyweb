@@ -63,6 +63,8 @@ main {
     width: 100%;
     height: calc(100% - 90px);
     overflow: hidden;
+    color: #a3a3a3;
+    font-weight: bold;
 }
 
 /* Main Nav */
@@ -74,9 +76,7 @@ main {
     flex-direction: column;
     padding: 20px 20px 5px 20px;
     background-color: black;
-    color: #a3a3a3;
     font-size: 12px;
-    font-weight: bold;
 }
 
 .logo {
@@ -158,7 +158,6 @@ main {
     float: left;
     padding-top: 105px;
     background-color: #141922;
-    color: #a3a3a3;
     overflow-y: auto;
 }
 
@@ -172,13 +171,50 @@ main {
     text-decoration: none;
     margin: 0 10px;
     font-size: 12px;
-    font-weight: bold;
 }
 
 
 
+/* Album Section */
+.albums-container {
+    padding: 20px;
+}
 
+.albums-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+    align-content: flex-start;
+    
+    padding: 20px 0;
+    
+}
 
+.single-album  {
+    width: calc((100% / 6) - 15px);
+    margin: 7px;
+}
+
+.single-album img {
+    width: 100%;
+}
+
+.albums-container h3 {
+    color: white;
+    font-size: 23px;
+    margin: 20px 0 10px;
+}
+
+.description-album h4 {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.description-album {
+    text-align: center;
+}
 
 /* FOOTER */
 footer {
