@@ -110,6 +110,7 @@ main {
 
 #home-btn {
     border-left: 3px solid lime;
+    padding: 5px 17px;
 }
 
 .nav-playlist {
@@ -141,7 +142,7 @@ main {
     font-size: 14px;
 }
 
-.home {
+#home-label {
     color: white;
 }
 
@@ -236,7 +237,7 @@ main {
     margin-bottom: 30px;
 }
 
-.circle {
+.circle-artist {
     border-radius: 50%;
 }
 
@@ -312,7 +313,7 @@ main {
         display: none;
     }
 
-    .name {
+    .name-label {
         display: none;
     }
 
@@ -368,7 +369,7 @@ footer {
     padding-left: 15px;
 }
 
-#name {
+#bottom-track-name {
     font-size: 11px;
     color: #5a5a5a;
 }
@@ -460,7 +461,7 @@ footer {
     cursor: pointer;
 }
 
-#name:hover {
+#bottom-track-name:hover {
     text-decoration: underline;
     color: white;
     cursor: pointer;
