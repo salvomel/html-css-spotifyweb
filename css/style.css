@@ -322,7 +322,7 @@ main {
     }
 
     .download-icon {
-        margin-bottom: 20px;
+        margin: 0 4px 20px;
     }
 
     .logo-small {
@@ -345,7 +345,6 @@ footer {
     font-weight: bold;
     padding-right: 10px;
     padding-left: 10px;
-    
 }
 
 .bottom-left {
@@ -360,7 +359,6 @@ footer {
 }
 
 .track {
-    width: 40%;
     display: flex;
     align-items: center;
 }
@@ -375,10 +373,9 @@ footer {
 }
 
 .favourite-icons {
-    width: 60%;
     font-size: 18px;
     color: #5a5a5a;
-    padding-left: 8px;
+    padding-left: 30px;
 }
 
 .favourite-icons * {
@@ -396,6 +393,7 @@ footer {
     width: 50%;
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
 }
 
 .player-buttons {
@@ -421,6 +419,8 @@ footer {
     height: 5px;
     border-radius: 2px;
     margin: 0 20px;
+    display: flex;
+    align-items: center;
 }
 
 .player-progress {
@@ -428,6 +428,14 @@ footer {
     width: 25%;
     height: 5px;
     border-radius: 2px;
+}
+
+.circle-progress {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
 }
 
 .bar-container {
@@ -439,10 +447,12 @@ footer {
 
 .volume-bar {
     background-color: #5a5a5a;
-    width: 40%;
+    width: 30%;
     height: 5px;
     border-radius: 2px;
     margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 .volume-icons * {
@@ -451,7 +461,7 @@ footer {
 }
 
 .volume-icons {
-    width: 60%;
+    width: 70%;
     text-align: right;
 }
 
@@ -470,4 +480,33 @@ footer {
 .player-progress:hover {
     background-color: lime;
     cursor: pointer;
+}
+
+.player-buttons:hover {
+    cursor: pointer;
+}
+
+.player-progress:hover + .circle-progress {
+    display: block;
+}
+
+/* Footer media query */
+
+@media screen and (max-width: 601px) {
+
+    .favourite-icons {
+        padding-left: 5px;
+    }
+
+    .bottom-center {
+        padding: 0 30px;
+    }
+
+    .volume-bar {
+        display: none;
+    }
+
+    .volume-icons {
+        width: 100%;
+    }
 }
