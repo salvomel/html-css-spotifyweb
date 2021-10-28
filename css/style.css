@@ -33,7 +33,7 @@ li:hover {
 
 /* Hover Albums */
 .img-container:hover .img-album {
-    filter: opacity(0.5);
+    filter: opacity(0.4);
     cursor: pointer;
 }
 
@@ -86,13 +86,14 @@ main {
     float: left;
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 5px 20px;
     background-color: black;
     font-size: 12px;
 }
 
 .logo {
     width: 70%;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .logo-small {
@@ -100,16 +101,21 @@ main {
 }
 
 .nav-actions {
-    margin: 15px 0;
+    margin: 15px 0 20px;
 }
 
 .nav-actions li {
-    padding: 5px 0;
+    padding: 5px 20px;
+}
+
+#home-btn {
+    border-left: 3px solid lime;
 }
 
 .nav-playlist {
     flex-grow: 1;
     overflow: hidden;
+    padding: 0 20px;
 }
 
 .nav-playlist ul {
@@ -152,6 +158,10 @@ main {
 	height: 1px;
 	background-color: #a3a3a3;
     margin: 10px 0;
+}
+
+.nav-user {
+    padding: 0 20px 6px;
 }
 
 .user {
@@ -331,26 +341,72 @@ footer {
     display: flex;
     background-color: #282828;
     color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    
 }
 
-.bottom-left,
+.bottom-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.track-img {
+    width: 50px;
+    height: 50px;
+}
+
+.track {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.track-name {
+    padding-left: 15px;
+}
+
+#name {
+    font-size: 11px;
+    color: #5a5a5a;
+}
+
+.favourite-icons {
+    width: 60%;
+    font-size: 18px;
+    color: #5a5a5a;
+    padding-left: 8px;
+}
+
+.favourite-icons * {
+    padding-left: 6px;
+}
+
 .bottom-right {
-    width: 25%;
-   
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .bottom-center {
     width: 50%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .player-buttons {
+    width: 100%;
     font-size: 18px;
-    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .player-buttons * {
-    padding: 8px;
+    padding: 6px;
     vertical-align: middle;
 }
 
@@ -360,17 +416,57 @@ footer {
 
 .player-bar {
     background-color: #5a5a5a;
-    width: 60%;
+    width: 70%;
     height: 5px;
     border-radius: 2px;
-    margin: auto;
-    
+    margin: 0 20px;
 }
 
 .player-progress {
     background-color: white;
-    width: 20%;
+    width: 25%;
     height: 5px;
     border-radius: 2px;
 }
 
+.bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.volume-bar {
+    background-color: #5a5a5a;
+    width: 40%;
+    height: 5px;
+    border-radius: 2px;
+    margin: auto;
+}
+
+.volume-icons * {
+    padding-right: 8px;
+    font-size: 13px;
+}
+
+.volume-icons {
+    width: 60%;
+    text-align: right;
+}
+
+/* Hover Footer */
+.play:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#name:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.player-progress:hover {
+    background-color: lime;
+    cursor: pointer;
+}

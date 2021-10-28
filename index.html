@@ -31,7 +31,7 @@
                     <!-- Nav actions buttons -->
                     <div class="nav-actions">
                         <ul>
-                            <li>
+                            <li id="home-btn">
                                 <img class="actions-icon" src="img/home.svg" alt="Home icon">
                                 <span class="name home">Home</span>
                             </li>
@@ -273,21 +273,18 @@
                 <!-- Track -->
                 <div class="track">
 
-                    <div class="track-img">
-                        
-                    </div>
-
+                    <img class="track-img" src="img/sinister.jpeg" alt="Sinister">
+                
                     <div class="track-name">
                         <h5>Sinister</h5>
-                        <span>Brano Nome</span>
+                        <span id="name">Brano Nome</span>
                     </div>
                 </div>
 
                 <!-- Icons -->
-                <div class="favorite-icons">
+                <div class="favourite-icons">
                     <span><i class="far fa-heart"></i></span>
                     <span><i class="far fa-folder"></i></span>
-                    
                 </div>
             </div>
 
@@ -306,9 +303,15 @@
                 </div>
 
                 <!-- Player Bar -->
-                <div class="player-bar">
-                    <div class="player-progress"></div>
+                <div class="bar-container">
+                    <span>4:35</span>
+                    <div class="player-bar">
+                        <div class="player-progress"></div>
+                        <div class="circle-progress"></div>
+                    </div>
+                    <span>4:35</span>
                 </div>
+                
 
             </div>
 
@@ -324,7 +327,7 @@
 
                 <!-- Volume Bar -->
                 <div class="volume-bar">
-
+                    <div class="player-progress"></div>
                 </div>
             </div>
         </footer>
