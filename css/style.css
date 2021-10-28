@@ -19,12 +19,6 @@ li {
     list-style-type: none;
 }
 
-.actions-icon {
-    height: 26px;
-    width: 26px;
-    vertical-align: middle;
-}
-
 /* Hover Buttons */
 li:hover {
     color: white;
@@ -100,6 +94,7 @@ main {
     display: none;
 }
 
+/* Nav Actions */
 .nav-actions {
     margin: 15px 0 20px;
 }
@@ -113,6 +108,13 @@ main {
     padding: 5px 17px;
 }
 
+.actions-icon {
+    height: 26px;
+    width: 26px;
+    vertical-align: middle;
+}
+
+/* Nav Playlist */
 .nav-playlist {
     flex-grow: 1;
     overflow: hidden;
@@ -138,7 +140,7 @@ main {
     vertical-align: middle;
 }
 
-#create {
+#create-playlist {
     font-size: 14px;
 }
 
@@ -206,7 +208,7 @@ main {
     font-size: 12px;
 }
 
-.evidence::after {
+#evidence-menu::after {
     display: block;
 	content: '';
 	width: 40%;
@@ -275,7 +277,7 @@ main {
     text-align: center;
 }
 
-/* Media Query */
+/* MAIN Media Query */
 
 @media screen and (max-width: 1101px) {
     
@@ -347,6 +349,7 @@ footer {
     padding-left: 10px;
 }
 
+/* Footer Left */
 .bottom-left {
     width: 30%;
     display: flex;
@@ -382,13 +385,8 @@ footer {
     padding-left: 6px;
 }
 
-.bottom-right {
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
+/* Footer Center */
 .bottom-center {
     width: 50%;
     display: flex;
@@ -423,6 +421,14 @@ footer {
     align-items: center;
 }
 
+.bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+/* Common Footer */
 .player-progress {
     background-color: white;
     width: 25%;
@@ -438,11 +444,12 @@ footer {
     display: none;
 }
 
-.bar-container {
+/* Bottom Right */
+.bottom-right {
+    width: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    font-size: 13px;
 }
 
 .volume-bar {
@@ -490,7 +497,13 @@ footer {
     display: block;
 }
 
-/* Footer media query */
+#heart:hover,
+#folder:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER media query */
 
 @media screen and (max-width: 601px) {
 
